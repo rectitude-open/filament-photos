@@ -1,12 +1,14 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+declare(strict_types=1);
+
+namespace RectitudeOpen\FilamentPhotos\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class FilamentPhotosCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'filament-photos';
 
     public $description = 'My command';
 
