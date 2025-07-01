@@ -32,13 +32,12 @@ class FilamentPhotosServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package->name(static::$name)
-            ->hasCommands($this->getCommands())
+            // ->hasCommands($this->getCommands())
             ->hasInstallCommand(function (InstallCommand $command) {
                 $command
                     ->publishConfigFile()
                     ->publishMigrations()
-                    ->askToRunMigrations()
-                    ->askToStarRepoOnGitHub('rectitude-open/filament-photos');
+                    ->askToRunMigrations();
             });
 
         $configFileName = $package->shortName();
@@ -65,36 +64,36 @@ class FilamentPhotosServiceProvider extends PackageServiceProvider
     public function packageBooted(): void
     {
         // Asset Registration
-        FilamentAsset::register(
-            $this->getAssets(),
-            $this->getAssetPackageName()
-        );
+        // FilamentAsset::register(
+        //     $this->getAssets(),
+        //     $this->getAssetPackageName()
+        // );
 
-        FilamentAsset::registerScriptData(
-            $this->getScriptData(),
-            $this->getAssetPackageName()
-        );
+        // FilamentAsset::registerScriptData(
+        //     $this->getScriptData(),
+        //     $this->getAssetPackageName()
+        // );
 
         // Icon Registration
-        FilamentIcon::register($this->getIcons());
+        // FilamentIcon::register($this->getIcons());
 
         // Handle Stubs
-        if (app()->runningInConsole()) {
-            foreach (app(Filesystem::class)->files(__DIR__ . '/../stubs/') as $file) {
-                $this->publishes([
-                    $file->getRealPath() => base_path("stubs/filament-photos/{$file->getFilename()}"),
-                ], 'filament-photos-stubs');
-            }
-        }
+        // if (app()->runningInConsole()) {
+        //     foreach (app(Filesystem::class)->files(__DIR__ . '/../stubs/') as $file) {
+        //         $this->publishes([
+        //             $file->getRealPath() => base_path("stubs/filament-photos/{$file->getFilename()}"),
+        //         ], 'filament-photos-stubs');
+        //     }
+        // }
 
         // Testing
-        Testable::mixin(new TestsFilamentPhotos);
+        // Testable::mixin(new TestsFilamentPhotos);
     }
 
-    protected function getAssetPackageName(): ?string
-    {
-        return 'rectitude-open/filament-photos';
-    }
+    // protected function getAssetPackageName(): ?string
+    // {
+    //     return 'rectitude-open/filament-photos';
+    // }
 
     /**
      * @return array<Asset>
@@ -103,8 +102,8 @@ class FilamentPhotosServiceProvider extends PackageServiceProvider
     {
         return [
             // AlpineComponent::make('filament-photos', __DIR__ . '/../resources/dist/components/filament-photos.js'),
-            Css::make('filament-photos-styles', __DIR__ . '/../resources/dist/filament-photos.css'),
-            Js::make('filament-photos-scripts', __DIR__ . '/../resources/dist/filament-photos.js'),
+            // Css::make('filament-photos-styles', __DIR__ . '/../resources/dist/filament-photos.css'),
+            // Js::make('filament-photos-scripts', __DIR__ . '/../resources/dist/filament-photos.js'),
         ];
     }
 
@@ -148,7 +147,8 @@ class FilamentPhotosServiceProvider extends PackageServiceProvider
     protected function getMigrations(): array
     {
         return [
-            'create_filament-photos_table',
+            'create_photos_table',
+            'create_photo_categories_table',
         ];
     }
 }
