@@ -5,17 +5,18 @@ declare(strict_types=1);
 return [
     'cluster' => [
         'nav' => [
-            'label' => 'Photo',
+            'label' => 'Photos',
             'group' => 'Content',
         ],
     ],
     'photo' => [
         'nav' => [
-            'label' => 'Photo',
+            'label' => 'Photos',
             'group' => '',
         ],
         'field' => [
             'title' => 'Title',
+            'taxonomy' => 'Taxonomy',
             'categories' => 'Categories',
             'pictures' => 'Pictures',
             'seo' => 'SEO',
@@ -33,7 +34,7 @@ return [
     ],
     'photo_category' => [
         'nav' => [
-            'label' => 'People Categories',
+            'label' => 'Photo Categories',
             'group' => '',
         ],
         'field' => [
