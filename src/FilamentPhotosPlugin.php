@@ -6,6 +6,8 @@ namespace RectitudeOpen\FilamentPhotos;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
+use RectitudeOpen\FilamentPhotos\Filament\Pages\PhotoCategory;
+use RectitudeOpen\FilamentPhotos\Filament\Resources\PhotoResource;
 
 class FilamentPhotosPlugin implements Plugin
 {
@@ -16,7 +18,17 @@ class FilamentPhotosPlugin implements Plugin
 
     public function register(Panel $panel): void
     {
-        //
+        $panel
+            ->resources([
+                config('filament-photo.photo.filament_resource', PhotoResource::class),
+            ])
+            ->pages([
+                config('filament-photo.photo_category.page', PhotoCategory::class),
+            ])
+            ->discoverClusters(
+                __DIR__ . '/Filament/Clusters',
+                'RectitudeOpen\\FilamentPhotos\\Filament\\Clusters'
+            );
     }
 
     public function boot(Panel $panel): void
