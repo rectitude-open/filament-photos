@@ -11,7 +11,7 @@ class PhotoCluster extends Cluster
 {
     public static function getNavigationIcon(): string | Htmlable | null
     {
-        return static::$navigationIcon ?? config('filament-photos.cluster.navigation_icon', 'heroicon-o-identification');
+        return static::$navigationIcon ?? config('filament-photos.cluster.navigation_icon', 'heroicon-o-photo');
     }
 
     public static function getNavigationSort(): ?int

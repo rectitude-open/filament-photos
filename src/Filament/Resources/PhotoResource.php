@@ -37,7 +37,7 @@ class PhotoResource extends Resource
 
     public static function getNavigationIcon(): ?string
     {
-        return static::$navigationIcon ?? config('filament-photos.photo.navigation_icon', 'heroicon-o-identification');
+        return static::$navigationIcon ?? config('filament-photos.photo.navigation_icon', 'heroicon-o-photo');
     }
 
     public static function getNavigationSort(): ?int
@@ -77,7 +77,8 @@ class PhotoResource extends Resource
                             ->label(__('filament-photos::filament-photos.photo.field.pictures'))
                             ->multiple()
                             ->relationship('pictures', 'id')
-                            ->directory('photo')
+                            ->directory('photos')
+                            ->columnSpanFull()
                             ->listDisplay(true),
                     ])->columnSpan(['xl' => 2]),
                     Grid::make()->schema([
