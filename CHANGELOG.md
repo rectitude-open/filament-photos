@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/rectitude-open/filament-photos/compare/v1.1.0...v1.2.0) (2025-07-04)
+
+
+### Features
+
+* add description field ([af5d498](https://github.com/rectitude-open/filament-photos/commit/af5d4980953b682992a5390a79cd2747bb9a3078))
+
 ## [1.1.0](https://github.com/rectitude-open/filament-photos/compare/v1.0.0...v1.1.0) (2025-07-02)
 
 
