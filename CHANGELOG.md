@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/rectitude-open/filament-photos/compare/v1.2.0...v1.2.1) (2025-07-04)
+
+
+### Bug Fixes
+
+* update description field label in PhotoResource ([afa1e0e](https://github.com/rectitude-open/filament-photos/commit/afa1e0e0105e5b1c7ff791ea0d4c7f8de3c42de5))
+
 ## [1.2.0](https://github.com/rectitude-open/filament-photos/compare/v1.1.0...v1.2.0) (2025-07-04)
 
 
