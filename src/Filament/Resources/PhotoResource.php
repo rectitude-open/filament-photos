@@ -67,7 +67,7 @@ class PhotoResource extends Resource
     {
         $editorClass = config('filament-photos.editor_component_class', RichEditor::class);
         $editorComponent = $editorClass::make('description')
-            ->label(__('filament-photos::filament-photos.field.description'))
+            ->label(__('filament-photos::filament-photos.photo.field.description'))
             ->fileAttachmentsDisk('public')
             ->fileAttachmentsDirectory('uploads')
             ->fileAttachmentsVisibility('public')
