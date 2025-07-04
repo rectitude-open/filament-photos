@@ -18,6 +18,7 @@ use RectitudeOpen\FilamentPhotos\Database\Factories\PhotoFactory;
 /**
  * @property int $id
  * @property string $title
+ * @property string|null $description
  * @property string $name
  * @property bool $is_published
  * @property int $display_order
@@ -38,6 +39,7 @@ class Photo extends Model
 
     protected $fillable = [
         'title',
+        'description',
         'slug',
         'is_published',
         'display_order',

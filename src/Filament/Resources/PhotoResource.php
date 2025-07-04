@@ -9,6 +9,7 @@ use Awcodes\Curator\Components\Tables\CuratorColumn;
 use CodeWithDennis\FilamentSelectTree\SelectTree;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Grid;
+use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\ToggleButtons;
@@ -64,6 +65,14 @@ class PhotoResource extends Resource
 
     public static function form(Form $form): Form
     {
+        $editorClass = config('filament-photos.editor_component_class', RichEditor::class);
+        $editorComponent = $editorClass::make('description')
+            ->label(__('filament-photos::filament-photos.field.description'))
+            ->fileAttachmentsDisk('public')
+            ->fileAttachmentsDirectory('uploads')
+            ->fileAttachmentsVisibility('public')
+            ->columnSpan('full');
+
         return $form
             ->schema([
                 Grid::make(['sm' => 3])->schema([
@@ -80,6 +89,7 @@ class PhotoResource extends Resource
                             ->directory('photos')
                             ->columnSpanFull()
                             ->listDisplay(true),
+                        $editorComponent,
                     ])->columnSpan(['xl' => 2]),
                     Grid::make()->schema([
                         Section::make(__('filament-photos::filament-photos.photo.field.taxonomy'))

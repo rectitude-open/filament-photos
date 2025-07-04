@@ -21,4 +21,5 @@ return [
         'navigation_sort' => 2,
         'navigation_icon' => 'heroicon-o-rectangle-stack',
     ],
+    'editor_component_class' => \Filament\Forms\Components\RichEditor::class,
 ];

@@ -20,6 +20,7 @@ class PhotoFactory extends Factory
     {
         return [
             'title' => $this->faker->realText(255),
+            'description' => $this->faker->realText(1000),
             'is_published' => $this->faker->boolean(),
             'display_order' => $this->faker->numberBetween(0, 100),
             'created_at' => $this->faker->dateTimeThisYear(),

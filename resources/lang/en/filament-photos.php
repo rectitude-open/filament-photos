@@ -16,6 +16,7 @@ return [
         ],
         'field' => [
             'title' => 'Title',
+            'description' => 'Description',
             'taxonomy' => 'Taxonomy',
             'categories' => 'Categories',
             'pictures' => 'Pictures',
