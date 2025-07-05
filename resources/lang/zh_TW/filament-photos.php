@@ -1,0 +1,45 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+    'cluster' => [
+        'nav' => [
+            'label' => '圖片',
+            'group' => '內容',
+        ],
+    ],
+    'photo' => [
+        'nav' => [
+            'label' => '圖片',
+            'group' => '',
+        ],
+        'field' => [
+            'title' => '標題',
+            'description' => '描述',
+            'taxonomy' => '分類法',
+            'categories' => '分類',
+            'pictures' => '圖片',
+            'seo' => 'SEO',
+            'meta' => '中繼資料',
+            'slug' => '別名',
+            'display_order' => '顯示順序',
+            'created_at' => '建立時間',
+            'status' => '狀態',
+            'status_published' => '已發佈',
+            'status_draft' => '草稿',
+        ],
+        'info' => [
+            'select_categories' => '選擇分類',
+        ],
+    ],
+    'photo_category' => [
+        'nav' => [
+            'label' => '圖片分類',
+            'group' => '',
+        ],
+        'field' => [
+            'title' => '標題',
+        ],
+    ],
+];

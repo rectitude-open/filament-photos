@@ -1,0 +1,45 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+    'cluster' => [
+        'nav' => [
+            'label' => 'Foto',
+            'group' => 'Contenuto',
+        ],
+    ],
+    'photo' => [
+        'nav' => [
+            'label' => 'Foto',
+            'group' => '',
+        ],
+        'field' => [
+            'title' => 'Titolo',
+            'description' => 'Descrizione',
+            'taxonomy' => 'Tassonomia',
+            'categories' => 'Categorie',
+            'pictures' => 'Immagini',
+            'seo' => 'SEO',
+            'meta' => 'Meta',
+            'slug' => 'Slug',
+            'display_order' => 'Ordine di visualizzazione',
+            'created_at' => 'Creato il',
+            'status' => 'Stato',
+            'status_published' => 'Pubblicato',
+            'status_draft' => 'Bozza',
+        ],
+        'info' => [
+            'select_categories' => 'Seleziona categorie',
+        ],
+    ],
+    'photo_category' => [
+        'nav' => [
+            'label' => 'Categorie foto',
+            'group' => '',
+        ],
+        'field' => [
+            'title' => 'Titolo',
+        ],
+    ],
+];
