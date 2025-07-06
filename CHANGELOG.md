@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/rectitude-open/filament-photos/compare/v1.2.1...v1.3.0) (2025-07-06)
+
+
+### Features
+
+* add more translations ([ea577ab](https://github.com/rectitude-open/filament-photos/commit/ea577abfaecfce3d53cee66791d468df47f205be))
+
 ## [1.2.1](https://github.com/rectitude-open/filament-photos/compare/v1.2.0...v1.2.1) (2025-07-04)
 
 
