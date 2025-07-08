@@ -43,7 +43,6 @@ class Photo extends Model
         'slug',
         'is_published',
         'display_order',
-        'avatar_id',
         'created_at',
     ];
 
