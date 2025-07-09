@@ -1,9 +1,11 @@
 {
     "name": "rectitude-open/filament-photos",
-    "description": "This is my package filament-photos",
+    "description": "Filament Photos is a Filament plugin for managing curated photo collections and galleries.",
     "keywords": [
         "filament",
-        "filament plugin"
+        "filament plugin",
+        "gallery",
+        "photos"
     ],
     "homepage": "https://github.com/rectitude-open/filament-photos",
     "support": {
