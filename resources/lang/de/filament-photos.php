@@ -23,6 +23,7 @@ return [
             'seo' => 'SEO',
             'meta' => 'Meta',
             'slug' => 'Slug',
+            'url' => 'URL',
             'display_order' => 'Anzeigereihenfolge',
             'created_at' => 'Erstellt am',
             'status' => 'Status',
@@ -35,7 +36,7 @@ return [
     ],
     'photo_category' => [
         'nav' => [
-            'label' => 'Fotokategorien',
+            'label' => 'Foto-Kategorien',
             'group' => '',
         ],
         'field' => [

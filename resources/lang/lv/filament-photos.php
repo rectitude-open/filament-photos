@@ -15,7 +15,7 @@ return [
             'group' => '',
         ],
         'field' => [
-            'title' => 'Virsraksts',
+            'title' => 'Nosaukums',
             'description' => 'Apraksts',
             'taxonomy' => 'Taksonomija',
             'categories' => 'Kategorijas',
@@ -23,23 +23,24 @@ return [
             'seo' => 'SEO',
             'meta' => 'Meta',
             'slug' => 'Slug',
-            'display_order' => 'Attēlošanas secība',
+            'url' => 'URL',
+            'display_order' => 'Rādīšanas kārtība',
             'created_at' => 'Izveidots',
             'status' => 'Statuss',
             'status_published' => 'Publicēts',
             'status_draft' => 'Melnraksts',
         ],
         'info' => [
-            'select_categories' => 'Izvēlieties kategorijas',
+            'select_categories' => 'Atlasīt kategorijas',
         ],
     ],
     'photo_category' => [
         'nav' => [
-            'label' => 'Foto kategorijas',
+            'label' => 'Fotogrāfiju kategorijas',
             'group' => '',
         ],
         'field' => [
-            'title' => 'Virsraksts',
+            'title' => 'Nosaukums',
         ],
     ],
 ];

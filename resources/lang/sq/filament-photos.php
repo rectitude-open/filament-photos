@@ -5,13 +5,13 @@ declare(strict_types=1);
 return [
     'cluster' => [
         'nav' => [
-            'label' => 'Foto',
+            'label' => 'Fotografi',
             'group' => 'Përmbajtje',
         ],
     ],
     'photo' => [
         'nav' => [
-            'label' => 'Foto',
+            'label' => 'Fotografi',
             'group' => '',
         ],
         'field' => [
@@ -23,19 +23,20 @@ return [
             'seo' => 'SEO',
             'meta' => 'Meta',
             'slug' => 'Slug',
-            'display_order' => 'Renditja e shfaqjes',
+            'url' => 'URL',
+            'display_order' => 'Rendi i shfaqjes',
             'created_at' => 'Krijuar më',
             'status' => 'Statusi',
             'status_published' => 'Publikuar',
             'status_draft' => 'Draft',
         ],
         'info' => [
-            'select_categories' => 'Zgjidhni kategoritë',
+            'select_categories' => 'Përzgjidhni kategoritë',
         ],
     ],
     'photo_category' => [
         'nav' => [
-            'label' => 'Kategoritë e fotove',
+            'label' => 'Kategoritë e fotografive',
             'group' => '',
         ],
         'field' => [

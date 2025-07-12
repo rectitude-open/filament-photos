@@ -15,7 +15,7 @@ return [
             'group' => '',
         ],
         'field' => [
-            'title' => 'Название',
+            'title' => 'Заголовок',
             'description' => 'Описание',
             'taxonomy' => 'Таксономия',
             'categories' => 'Категории',
@@ -23,6 +23,7 @@ return [
             'seo' => 'SEO',
             'meta' => 'Мета',
             'slug' => 'Слаг',
+            'url' => 'URL',
             'display_order' => 'Порядок отображения',
             'created_at' => 'Создано',
             'status' => 'Статус',
@@ -39,7 +40,7 @@ return [
             'group' => '',
         ],
         'field' => [
-            'title' => 'Название',
+            'title' => 'Заголовок',
         ],
     ],
 ];

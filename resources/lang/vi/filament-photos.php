@@ -5,13 +5,13 @@ declare(strict_types=1);
 return [
     'cluster' => [
         'nav' => [
-            'label' => 'Ảnh',
+            'label' => 'Hình ảnh',
             'group' => 'Nội dung',
         ],
     ],
     'photo' => [
         'nav' => [
-            'label' => 'Ảnh',
+            'label' => 'Hình ảnh',
             'group' => '',
         ],
         'field' => [
@@ -23,6 +23,7 @@ return [
             'seo' => 'SEO',
             'meta' => 'Meta',
             'slug' => 'Slug',
+            'url' => 'URL',
             'display_order' => 'Thứ tự hiển thị',
             'created_at' => 'Ngày tạo',
             'status' => 'Trạng thái',
@@ -35,7 +36,7 @@ return [
     ],
     'photo_category' => [
         'nav' => [
-            'label' => 'Danh mục ảnh',
+            'label' => 'Danh mục hình ảnh',
             'group' => '',
         ],
         'field' => [

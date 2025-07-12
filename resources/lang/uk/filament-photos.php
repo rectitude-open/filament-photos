@@ -23,6 +23,7 @@ return [
             'seo' => 'SEO',
             'meta' => 'Мета',
             'slug' => 'Слаг',
+            'url' => 'URL',
             'display_order' => 'Порядок відображення',
             'created_at' => 'Створено',
             'status' => 'Статус',
@@ -30,7 +31,7 @@ return [
             'status_draft' => 'Чернетка',
         ],
         'info' => [
-            'select_categories' => 'Виберіть категорії',
+            'select_categories' => 'Оберіть категорії',
         ],
     ],
     'photo_category' => [

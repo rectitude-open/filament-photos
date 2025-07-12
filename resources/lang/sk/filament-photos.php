@@ -5,13 +5,13 @@ declare(strict_types=1);
 return [
     'cluster' => [
         'nav' => [
-            'label' => 'Fotky',
+            'label' => 'Fotografie',
             'group' => 'Obsah',
         ],
     ],
     'photo' => [
         'nav' => [
-            'label' => 'Fotky',
+            'label' => 'Fotografie',
             'group' => '',
         ],
         'field' => [
@@ -23,11 +23,12 @@ return [
             'seo' => 'SEO',
             'meta' => 'Meta',
             'slug' => 'Slug',
+            'url' => 'URL',
             'display_order' => 'Poradie zobrazenia',
             'created_at' => 'Vytvorené',
             'status' => 'Stav',
             'status_published' => 'Publikované',
-            'status_draft' => 'Návrh',
+            'status_draft' => 'Koncept',
         ],
         'info' => [
             'select_categories' => 'Vyberte kategórie',
@@ -35,7 +36,7 @@ return [
     ],
     'photo_category' => [
         'nav' => [
-            'label' => 'Kategórie fotiek',
+            'label' => 'Kategórie fotografií',
             'group' => '',
         ],
         'field' => [

@@ -23,6 +23,7 @@ return [
             'seo' => 'SEO',
             'meta' => 'Meta',
             'slug' => 'Slug',
+            'url' => 'URL',
             'display_order' => 'Ordem de exibição',
             'created_at' => 'Criado em',
             'status' => 'Status',

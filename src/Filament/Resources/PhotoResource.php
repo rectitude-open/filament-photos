@@ -82,6 +82,10 @@ class PhotoResource extends Resource
                             ->required()
                             ->columnSpanFull()
                             ->maxLength(255),
+                        TextInput::make('url')
+                            ->label(__('filament-photos::filament-photos.photo.field.url'))
+                            ->columnSpanFull()
+                            ->maxLength(255),
                         CuratorPicker::make('pictures')
                             ->label(__('filament-photos::filament-photos.photo.field.pictures'))
                             ->multiple()

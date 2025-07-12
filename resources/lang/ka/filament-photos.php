@@ -6,7 +6,7 @@ return [
     'cluster' => [
         'nav' => [
             'label' => 'ფოტოები',
-            'group' => 'შინაარსი',
+            'group' => 'კონტენტი',
         ],
     ],
     'photo' => [
@@ -23,11 +23,12 @@ return [
             'seo' => 'SEO',
             'meta' => 'მეტა',
             'slug' => 'სლაგი',
+            'url' => 'URL',
             'display_order' => 'ჩვენების რიგი',
             'created_at' => 'შექმნის თარიღი',
             'status' => 'სტატუსი',
             'status_published' => 'გამოქვეყნებული',
-            'status_draft' => 'მონახაზი',
+            'status_draft' => 'ესკიზი',
         ],
         'info' => [
             'select_categories' => 'აირჩიეთ კატეგორიები',
@@ -35,7 +36,7 @@ return [
     ],
     'photo_category' => [
         'nav' => [
-            'label' => 'ფოტო კატეგორიები',
+            'label' => 'ფოტოების კატეგორიები',
             'group' => '',
         ],
         'field' => [

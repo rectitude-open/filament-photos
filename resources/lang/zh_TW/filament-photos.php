@@ -5,13 +5,13 @@ declare(strict_types=1);
 return [
     'cluster' => [
         'nav' => [
-            'label' => '圖片',
+            'label' => '照片',
             'group' => '內容',
         ],
     ],
     'photo' => [
         'nav' => [
-            'label' => '圖片',
+            'label' => '照片',
             'group' => '',
         ],
         'field' => [
@@ -22,7 +22,8 @@ return [
             'pictures' => '圖片',
             'seo' => 'SEO',
             'meta' => '中繼資料',
-            'slug' => '別名',
+            'slug' => '網址別名',
+            'url' => 'URL',
             'display_order' => '顯示順序',
             'created_at' => '建立時間',
             'status' => '狀態',
@@ -35,7 +36,7 @@ return [
     ],
     'photo_category' => [
         'nav' => [
-            'label' => '圖片分類',
+            'label' => '照片分類',
             'group' => '',
         ],
         'field' => [

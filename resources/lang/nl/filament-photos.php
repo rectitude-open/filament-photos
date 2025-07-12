@@ -5,13 +5,13 @@ declare(strict_types=1);
 return [
     'cluster' => [
         'nav' => [
-            'label' => 'Foto’s',
+            'label' => 'Foto\'s',
             'group' => 'Inhoud',
         ],
     ],
     'photo' => [
         'nav' => [
-            'label' => 'Foto’s',
+            'label' => 'Foto\'s',
             'group' => '',
         ],
         'field' => [
@@ -23,6 +23,7 @@ return [
             'seo' => 'SEO',
             'meta' => 'Meta',
             'slug' => 'Slug',
+            'url' => 'URL',
             'display_order' => 'Weergavevolgorde',
             'created_at' => 'Aangemaakt op',
             'status' => 'Status',
@@ -35,7 +36,7 @@ return [
     ],
     'photo_category' => [
         'nav' => [
-            'label' => 'Fotocategorieën',
+            'label' => 'Foto categorieën',
             'group' => '',
         ],
         'field' => [

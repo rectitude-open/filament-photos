@@ -6,7 +6,7 @@ return [
     'cluster' => [
         'nav' => [
             'label' => 'Zdjęcia',
-            'group' => 'Zawartość',
+            'group' => 'Treść',
         ],
     ],
     'photo' => [
@@ -23,10 +23,11 @@ return [
             'seo' => 'SEO',
             'meta' => 'Meta',
             'slug' => 'Slug',
+            'url' => 'URL',
             'display_order' => 'Kolejność wyświetlania',
             'created_at' => 'Utworzono',
             'status' => 'Status',
-            'status_published' => 'Opublikowano',
+            'status_published' => 'Opublikowane',
             'status_draft' => 'Szkic',
         ],
         'info' => [

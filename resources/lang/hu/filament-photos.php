@@ -5,13 +5,13 @@ declare(strict_types=1);
 return [
     'cluster' => [
         'nav' => [
-            'label' => 'Fotók',
+            'label' => 'Fényképek',
             'group' => 'Tartalom',
         ],
     ],
     'photo' => [
         'nav' => [
-            'label' => 'Fotók',
+            'label' => 'Fényképek',
             'group' => '',
         ],
         'field' => [
@@ -23,11 +23,12 @@ return [
             'seo' => 'SEO',
             'meta' => 'Meta',
             'slug' => 'Slug',
+            'url' => 'URL',
             'display_order' => 'Megjelenítési sorrend',
             'created_at' => 'Létrehozva',
             'status' => 'Állapot',
             'status_published' => 'Közzétéve',
-            'status_draft' => 'Piszkozat',
+            'status_draft' => 'Vázlat',
         ],
         'info' => [
             'select_categories' => 'Kategóriák kiválasztása',
@@ -35,7 +36,7 @@ return [
     ],
     'photo_category' => [
         'nav' => [
-            'label' => 'Fotó kategóriák',
+            'label' => 'Fénykép kategóriák',
             'group' => '',
         ],
         'field' => [

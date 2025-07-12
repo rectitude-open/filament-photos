@@ -23,14 +23,15 @@ return [
             'seo' => 'SEO',
             'meta' => 'Meta',
             'slug' => 'Slug',
-            'display_order' => 'Ordem de exibição',
-            'created_at' => 'Criado em',
+            'url' => 'URL',
+            'display_order' => 'Ordem de visualização',
+            'created_at' => 'Criado a',
             'status' => 'Estado',
             'status_published' => 'Publicado',
             'status_draft' => 'Rascunho',
         ],
         'info' => [
-            'select_categories' => 'Selecionar categorias',
+            'select_categories' => 'Seleccionar categorias',
         ],
     ],
     'photo_category' => [
