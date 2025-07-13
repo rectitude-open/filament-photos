@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.3](https://github.com/rectitude-open/filament-photos/compare/v1.6.2...v1.6.3) (2025-07-13)
+
+
+### Bug Fixes
+
+* add dehydrateStateUsing to url TextInput for handling null state ([298d5c5](https://github.com/rectitude-open/filament-photos/commit/298d5c57664a6900e6ea8b37fb47059e2f65c58e))
+
 ## [1.6.2](https://github.com/rectitude-open/filament-photos/compare/v1.6.1...v1.6.2) (2025-07-13)
 
 
