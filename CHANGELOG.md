@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.7.0](https://github.com/rectitude-open/filament-photos/compare/v1.6.3...v1.7.0) (2025-07-13)
+
+
+### Features
+
+* add getLatestPhotoPaginatedByCategory method for pagination by category ([6e2c739](https://github.com/rectitude-open/filament-photos/commit/6e2c739d281340c71150ff064f9983577399fd64))
+* add getTreeRecordTitle method for improved record title formatting ([986177f](https://github.com/rectitude-open/filament-photos/commit/986177f74f8ee8d2f19589182a8cf8f7f444c19e))
+
 ## [1.6.3](https://github.com/rectitude-open/filament-photos/compare/v1.6.2...v1.6.3) (2025-07-13)
 
 
