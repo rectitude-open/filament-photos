@@ -85,6 +85,7 @@ class PhotoResource extends Resource
                         TextInput::make('url')
                             ->label(__('filament-photos::filament-photos.photo.field.url'))
                             ->columnSpanFull()
+                            ->dehydrateStateUsing(fn ($state) => $state ?? '')
                             ->maxLength(255),
                         CuratorPicker::make('pictures')
                             ->label(__('filament-photos::filament-photos.photo.field.pictures'))
