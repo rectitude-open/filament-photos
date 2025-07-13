@@ -85,6 +85,11 @@ class Photo extends Model
             ->orderBy('order');
     }
 
+    public function firstPicture(): ?Media
+    {
+        return $this->pictures()->first();
+    }
+
     // @phpstan-ignore-next-line
     #[Scope]
     protected function withSlug(Builder $query, string $slug): void
