@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.6.0](https://github.com/rectitude-open/filament-photos/compare/v1.5.0...v1.6.0) (2025-07-13)
+
+
+### Features
+
+* add firstPicture method to retrieve the first associated picture ([4038076](https://github.com/rectitude-open/filament-photos/commit/4038076a88399fb4062c25939ede5a67149b2229))
+* implement categoryPhotos helper function to retrieve photos by category ([3049740](https://github.com/rectitude-open/filament-photos/commit/30497402ae99ceb5728eceda5448350e7015498b))
+
 ## [1.5.0](https://github.com/rectitude-open/filament-photos/compare/v1.4.0...v1.5.0) (2025-07-12)
 
 
