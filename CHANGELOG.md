@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.1](https://github.com/rectitude-open/filament-photos/compare/v1.6.0...v1.6.1) (2025-07-13)
+
+
+### Bug Fixes
+
+* add autoload files section to include helpers.php ([50321c8](https://github.com/rectitude-open/filament-photos/commit/50321c8c75e66125259a46c632827ac821e2cd28))
+
 ## [1.6.0](https://github.com/rectitude-open/filament-photos/compare/v1.5.0...v1.6.0) (2025-07-13)
 
 
