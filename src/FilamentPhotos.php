@@ -32,11 +32,11 @@ class FilamentPhotos
      */
     public function getPublishedPhotosByCategory(int $categoryId): Collection
     {
-        $carousels = $this->getModel()::published()->whereHas('categories', function ($query) use ($categoryId) {
-            $query->where('id', $categoryId);
-        })->get();
+        $photos = $this->getModel()::published()->whereHas('categories', function ($query) use ($categoryId) {
+            $query->where('photo_categories.id', $categoryId);
+        })->ordered()->get();
 
-        /** @var Collection<int, Photo> $carousels */
-        return $carousels;
+        /** @var Collection<int, Photo> $photos */
+        return $photos;
     }
 }
