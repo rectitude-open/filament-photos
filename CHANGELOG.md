@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.6.2](https://github.com/rectitude-open/filament-photos/compare/v1.6.1...v1.6.2) (2025-07-13)
+
+
+### Bug Fixes
+
+* rename function from photosByCategory to categoryPhotos for clarity ([e655cf0](https://github.com/rectitude-open/filament-photos/commit/e655cf0da77fecc428d63334bd84aa3157bb481d))
+* update variable names for consistency in getPublishedPhotosByCategory method ([b63b0c5](https://github.com/rectitude-open/filament-photos/commit/b63b0c587c08738dfbaf63e60ccf6877e55ccf46))
+
 ## [1.6.1](https://github.com/rectitude-open/filament-photos/compare/v1.6.0...v1.6.1) (2025-07-13)
 
 
