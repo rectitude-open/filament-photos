@@ -39,4 +39,19 @@ class FilamentPhotos
         /** @var Collection<int, Photo> $photos */
         return $photos;
     }
+
+    /**
+     * @return LengthAwarePaginator<Photo>
+     */
+    public function getLatestPhotoPaginatedByCategory(int $categoryId, int $perPage = 10): LengthAwarePaginator
+    {
+        // @phpstan-ignore-next-line
+        return $this->getModel()::with(['categories'])
+            ->published()
+            ->whereHas('categories', function ($query) use ($categoryId) {
+                $query->where('photo_categories.id', $categoryId);
+            })
+            ->ordered()
+            ->paginate($perPage);
+    }
 }
