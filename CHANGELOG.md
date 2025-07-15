@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.1](https://github.com/rectitude-open/filament-photos/compare/v1.7.0...v1.7.1) (2025-07-15)
+
+
+### Bug Fixes
+
+* update config keys for filament-photos resource and page ([3385c77](https://github.com/rectitude-open/filament-photos/commit/3385c77e289cf02456c08598a7c89d439c674f36))
+
 ## [1.7.0](https://github.com/rectitude-open/filament-photos/compare/v1.6.3...v1.7.0) (2025-07-13)
 
 
