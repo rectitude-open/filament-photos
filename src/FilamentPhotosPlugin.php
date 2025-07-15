@@ -20,10 +20,10 @@ class FilamentPhotosPlugin implements Plugin
     {
         $panel
             ->resources([
-                config('filament-photo.photo.filament_resource', PhotoResource::class),
+                config('filament-photos.photo.filament_resource', PhotoResource::class),
             ])
             ->pages([
-                config('filament-photo.photo_category.page', PhotoCategory::class),
+                config('filament-photos.photo_category.page', PhotoCategory::class),
             ])
             ->discoverClusters(
                 __DIR__ . '/Filament/Clusters',
