@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.7.2](https://github.com/rectitude-open/filament-photos/compare/v1.7.1...v1.7.2) (2025-07-18)
+
+
+### Bug Fixes
+
+* remove unused properties and improve type hinting in Photo model ([6d991b9](https://github.com/rectitude-open/filament-photos/commit/6d991b9afaef8ea21bb8d716eb9eaf662fe94e1b))
+* update type hint for getTreeRecordTitle method parameter ([6f22396](https://github.com/rectitude-open/filament-photos/commit/6f223965f29f47fbc54ac93ebca662a1d86d4da6))
+
 ## [1.7.1](https://github.com/rectitude-open/filament-photos/compare/v1.7.0...v1.7.1) (2025-07-15)
 
 
