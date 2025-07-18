@@ -27,9 +27,7 @@ use RectitudeOpen\FilamentPhotos\Database\Factories\PhotoFactory;
  * @property \Illuminate\Support\Carbon $updated_at
  * @property \Illuminate\Support\Carbon|null $deleted_at
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \RectitudeOpen\FilamentPhotos\Models\PhotoCategory> $categories
- * @property-read int|null $categories_count
  * @property-read \Illuminate\Database\Eloquent\Collection<int, \Awcodes\Curator\Models\Media> $pictures
- * @property-read int|null $pictures_count
  *
  * @method static \Illuminate\Database\Eloquent\Builder|static ordered()
  * @method static \Illuminate\Database\Eloquent\Builder|static withSlug(string $slug)
@@ -55,7 +53,7 @@ class Photo extends Model
 
     protected $with = ['pictures'];
 
-    public function categories()
+    public function categories(): BelongsToMany
     {
         return $this->belongsToMany(PhotoCategory::class, 'pivot_photo_categories', 'photo_id', 'category_id');
     }
@@ -80,14 +78,17 @@ class Photo extends Model
     public function pictures(): BelongsToMany
     {
         return $this
-            ->belongsToMany(Media::class, 'pivot_photo_media', 'photo_id', 'media_id')
+            ->belongsToMany(config('curator.model', Media::class), 'pivot_photo_media', 'photo_id', 'media_id')
             ->withPivot('order')
             ->orderBy('order');
     }
 
     public function firstPicture(): ?Media
     {
-        return $this->pictures()->first();
+        $picture = $this->pictures()->first();
+
+        /** @var Media|null $picture */
+        return $picture;
     }
 
     // @phpstan-ignore-next-line
