@@ -7,7 +7,6 @@ namespace RectitudeOpen\FilamentPhotos\Filament\Pages;
 use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Model;
 use RectitudeOpen\FilamentPhotos\Filament\Clusters\PhotoCluster;
-use RectitudeOpen\FilamentPhotos\Models\PhotoCategory as PhotoCategoryModel;
 use RectitudeOpen\FilamentPhotos\Models\PhotoCategory as TreePageModel;
 use SolutionForest\FilamentTree\Pages\TreePage as BasePage;
 
@@ -61,7 +60,7 @@ class PhotoCategory extends BasePage
     }
 
     /**
-     * @param  PhotoCategoryModel|null  $record
+     * @param  TreePageModel|null  $record
      */
     public function getTreeRecordTitle(?Model $record = null): string
     {
