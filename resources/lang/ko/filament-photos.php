@@ -32,6 +32,7 @@ return [
         ],
         'info' => [
             'select_categories' => '카테고리 선택',
+            'duplicate_selected' => '선택한 항목 복제',
         ],
     ],
     'photo_category' => [

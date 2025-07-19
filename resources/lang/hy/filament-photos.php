@@ -32,6 +32,7 @@ return [
         ],
         'info' => [
             'select_categories' => 'Ընտրել կատեգորիաները',
+            'duplicate_selected' => 'Կրկնօրինակել ընտրվածները',
         ],
     ],
     'photo_category' => [

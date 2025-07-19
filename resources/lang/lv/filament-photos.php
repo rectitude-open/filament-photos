@@ -32,6 +32,7 @@ return [
         ],
         'info' => [
             'select_categories' => 'Atlasīt kategorijas',
+            'duplicate_selected' => 'Dublēt izvēlētos',
         ],
     ],
     'photo_category' => [

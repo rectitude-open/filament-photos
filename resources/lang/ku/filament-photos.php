@@ -32,6 +32,7 @@ return [
         ],
         'info' => [
             'select_categories' => 'Kategorîyan Hilbijêre',
+            'duplicate_selected' => 'Yên hilbijartî dubare bike',
         ],
     ],
     'photo_category' => [

@@ -32,6 +32,7 @@ return [
         ],
         'info' => [
             'select_categories' => 'Оберіть категорії',
+            'duplicate_selected' => 'Дублювати вибрані',
         ],
     ],
     'photo_category' => [

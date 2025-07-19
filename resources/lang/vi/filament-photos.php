@@ -32,6 +32,7 @@ return [
         ],
         'info' => [
             'select_categories' => 'Chọn danh mục',
+            'duplicate_selected' => 'Nhân bản mục đã chọn',
         ],
     ],
     'photo_category' => [

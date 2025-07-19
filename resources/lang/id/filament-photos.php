@@ -32,6 +32,7 @@ return [
         ],
         'info' => [
             'select_categories' => 'Pilih Kategori',
+            'duplicate_selected' => 'Duplikat yang dipilih',
         ],
     ],
     'photo_category' => [

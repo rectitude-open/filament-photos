@@ -32,6 +32,7 @@ return [
         ],
         'info' => [
             'select_categories' => 'هاوپۆلەکان هەڵبژێرە',
+            'duplicate_selected' => 'دووبارەکردنی هەڵبژێردراوەکان',
         ],
     ],
     'photo_category' => [

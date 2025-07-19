@@ -32,6 +32,7 @@ return [
         ],
         'info' => [
             'select_categories' => 'აირჩიეთ კატეგორიები',
+            'duplicate_selected' => 'დუბლირება არჩეულების',
         ],
     ],
     'photo_category' => [

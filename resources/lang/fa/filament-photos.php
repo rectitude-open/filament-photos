@@ -32,6 +32,7 @@ return [
         ],
         'info' => [
             'select_categories' => 'انتخاب دسته‌بندی‌ها',
+            'duplicate_selected' => 'تکرار موارد انتخاب‌شده',
         ],
     ],
     'photo_category' => [

@@ -32,6 +32,7 @@ return [
         ],
         'info' => [
             'select_categories' => 'Kategóriák kiválasztása',
+            'duplicate_selected' => 'Kiválasztottak duplikálása',
         ],
     ],
     'photo_category' => [

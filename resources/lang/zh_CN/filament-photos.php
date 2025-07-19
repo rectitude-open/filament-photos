@@ -32,6 +32,7 @@ return [
         ],
         'info' => [
             'select_categories' => '选择分类',
+            'duplicate_selected' => '复制已选项',
         ],
     ],
     'photo_category' => [
