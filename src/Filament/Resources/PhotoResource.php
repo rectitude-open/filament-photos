@@ -11,6 +11,7 @@ use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Grid;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Section;
+use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\ToggleButtons;
 use Filament\Forms\Form;
@@ -21,11 +22,13 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use RalphJSmit\Filament\SEO\SEO;
 use RectitudeOpen\FilamentPhotos\Filament\Clusters\PhotoCluster;
 use RectitudeOpen\FilamentPhotos\Filament\Resources\PhotoResource\Pages;
 use RectitudeOpen\FilamentPhotos\Models\Photo;
+use RectitudeOpen\FilamentPhotos\Models\PhotoCategory;
 
 class PhotoResource extends Resource
 {
@@ -220,8 +223,51 @@ class PhotoResource extends Resource
                     Tables\Actions\DeleteBulkAction::make(),
                     Tables\Actions\ForceDeleteBulkAction::make(),
                     Tables\Actions\RestoreBulkAction::make(),
+                    Tables\Actions\BulkAction::make('replicate')
+                        ->label('Duplicate selected')
+                        ->label(__('filament-photos::filament-photos.photo.info.duplicate_selected'))
+                        ->icon('heroicon-o-document-duplicate')
+                        ->requiresConfirmation()
+                        ->defaultColor('primary')
+                        ->form([
+                            Select::make('categories')
+                                ->label(__('filament-photos::filament-photos.photo.field.categories'))
+                                ->options(self::generateCategoryTreeOptions())
+                                ->multiple()
+                                ->searchable()
+                                ->required(),
+                        ])
+                        ->action(function (Collection $records, array $data) {
+                            // @phpstan-ignore-next-line
+                            $records->each(function (Photo $record) use ($data) {
+                                $newRecord = $record->replicate();
+                                $newRecord->save();
+
+                                $newRecord->categories()->sync($data['categories']);
+                                $newRecord->pictures()->sync($record->pictures->pluck('id'));
+                            });
+                        })
+                        ->deselectRecordsAfterCompletion(),
                 ]),
             ])->defaultSort('created_at', 'desc');
+    }
+
+    private static function generateCategoryTreeOptions(?int $parentId = -1, int $level = 0): array
+    {
+        $categories = PhotoCategory::where('parent_id', $parentId)->ordered()->get();
+        $options = [];
+
+        foreach ($categories as $category) {
+            $prefix = $level > 0 ? str_repeat('-', $level) . ' ' : '';
+            $options[$category->id] = $prefix . $category->title;
+
+            $childrenOptions = self::generateCategoryTreeOptions($category->id, $level + 1);
+            if (! empty($childrenOptions)) {
+                $options += $childrenOptions;
+            }
+        }
+
+        return $options;
     }
 
     public static function getRelations(): array
