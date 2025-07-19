@@ -6,15 +6,19 @@ namespace RectitudeOpen\FilamentPhotos\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 use RectitudeOpen\FilamentPhotos\Database\Factories\PhotoCategoryFactory;
 use SolutionForest\FilamentTree\Concern\ModelTree;
 
+/**
+ * @property int $id
+ * @property string $title
+ * @property int $parent_id
+ * @property int $weight
+ */
 class PhotoCategory extends Model
 {
     use HasFactory;
     use ModelTree;
-    use SoftDeletes;
 
     protected $fillable = ['title', 'parent_id', 'weight'];
 
@@ -25,7 +29,7 @@ class PhotoCategory extends Model
 
     protected static function booted()
     {
-        static::forceDeleted(function ($photoCategory) {
+        static::deleted(function ($photoCategory) {
             $photoCategory->photo()->detach();
         });
     }
