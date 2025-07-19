@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.8.0](https://github.com/rectitude-open/filament-photos/compare/v1.7.2...v1.8.0) (2025-07-19)
+
+
+### Features
+
+* add bulk duplicate action for photos with category selection ([b1629e7](https://github.com/rectitude-open/filament-photos/commit/b1629e74ad4f3b0670f69dc15ea0e215943c7f89))
+* add translations for duplicate_selected ([51117c1](https://github.com/rectitude-open/filament-photos/commit/51117c11d178e159bc5d8d1c5ae66a05b27a0379))
+* remove soft deletes from PhotoCategory model and migration ([332fe4e](https://github.com/rectitude-open/filament-photos/commit/332fe4ec0597ca1c5fb9049ee47f27af2e465587))
+
 ## [1.7.2](https://github.com/rectitude-open/filament-photos/compare/v1.7.1...v1.7.2) (2025-07-18)
 
 
