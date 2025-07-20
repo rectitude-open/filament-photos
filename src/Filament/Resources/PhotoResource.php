@@ -224,7 +224,6 @@ class PhotoResource extends Resource
                     Tables\Actions\ForceDeleteBulkAction::make(),
                     Tables\Actions\RestoreBulkAction::make(),
                     Tables\Actions\BulkAction::make('replicate')
-                        ->label('Duplicate selected')
                         ->label(__('filament-photos::filament-photos.photo.info.duplicate_selected'))
                         ->icon('heroicon-o-document-duplicate')
                         ->requiresConfirmation()
