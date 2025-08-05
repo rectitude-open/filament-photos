@@ -10,6 +10,9 @@ return [
         ],
     ],
     'photo' => [
+        'resource' => [
+            'label' => 'Fotografie',
+        ],
         'nav' => [
             'label' => 'Fotografie',
             'group' => '',
@@ -36,6 +39,9 @@ return [
         ],
     ],
     'photo_category' => [
+        'resource' => [
+            'label' => 'Kategórie fotografií',
+        ],
         'nav' => [
             'label' => 'Kategórie fotografií',
             'group' => '',

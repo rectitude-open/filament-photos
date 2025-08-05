@@ -10,6 +10,9 @@ return [
         ],
     ],
     'photo' => [
+        'resource' => [
+            'label' => 'عکس‌ها',
+        ],
         'nav' => [
             'label' => 'عکس‌ها',
             'group' => '',
@@ -36,6 +39,9 @@ return [
         ],
     ],
     'photo_category' => [
+        'resource' => [
+            'label' => 'دسته‌بندی عکس‌ها',
+        ],
         'nav' => [
             'label' => 'دسته‌بندی عکس‌ها',
             'group' => '',

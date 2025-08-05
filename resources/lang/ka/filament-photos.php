@@ -10,6 +10,9 @@ return [
         ],
     ],
     'photo' => [
+        'resource' => [
+            'label' => 'ფოტოები',
+        ],
         'nav' => [
             'label' => 'ფოტოები',
             'group' => '',
@@ -36,6 +39,9 @@ return [
         ],
     ],
     'photo_category' => [
+        'resource' => [
+            'label' => 'ფოტო კატეგორიები',
+        ],
         'nav' => [
             'label' => 'ფოტოების კატეგორიები',
             'group' => '',

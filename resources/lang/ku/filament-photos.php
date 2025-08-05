@@ -10,6 +10,9 @@ return [
         ],
     ],
     'photo' => [
+        'resource' => [
+            'label' => 'Wêne',
+        ],
         'nav' => [
             'label' => 'Wêne',
             'group' => '',
@@ -36,6 +39,9 @@ return [
         ],
     ],
     'photo_category' => [
+        'resource' => [
+            'label' => 'Kategoriyên Wêneyan',
+        ],
         'nav' => [
             'label' => 'Kategorîyên Wêneyan',
             'group' => '',

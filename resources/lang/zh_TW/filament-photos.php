@@ -10,6 +10,9 @@ return [
         ],
     ],
     'photo' => [
+        'resource' => [
+            'label' => '照片',
+        ],
         'nav' => [
             'label' => '照片',
             'group' => '',
@@ -36,6 +39,9 @@ return [
         ],
     ],
     'photo_category' => [
+        'resource' => [
+            'label' => '照片分類',
+        ],
         'nav' => [
             'label' => '照片分類',
             'group' => '',

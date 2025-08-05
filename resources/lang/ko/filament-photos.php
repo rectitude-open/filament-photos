@@ -10,6 +10,9 @@ return [
         ],
     ],
     'photo' => [
+        'resource' => [
+            'label' => '사진',
+        ],
         'nav' => [
             'label' => '사진',
             'group' => '',
@@ -36,6 +39,9 @@ return [
         ],
     ],
     'photo_category' => [
+        'resource' => [
+            'label' => '사진 카테고리',
+        ],
         'nav' => [
             'label' => '사진 카테고리',
             'group' => '',

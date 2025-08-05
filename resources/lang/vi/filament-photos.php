@@ -10,6 +10,9 @@ return [
         ],
     ],
     'photo' => [
+        'resource' => [
+            'label' => 'Hình ảnh',
+        ],
         'nav' => [
             'label' => 'Hình ảnh',
             'group' => '',
@@ -36,6 +39,9 @@ return [
         ],
     ],
     'photo_category' => [
+        'resource' => [
+            'label' => 'Danh mục hình ảnh',
+        ],
         'nav' => [
             'label' => 'Danh mục hình ảnh',
             'group' => '',

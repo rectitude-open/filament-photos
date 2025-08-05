@@ -10,6 +10,9 @@ return [
         ],
     ],
     'photo' => [
+        'resource' => [
+            'label' => 'وێنەکان',
+        ],
         'nav' => [
             'label' => 'وێنەکان',
             'group' => '',
@@ -36,6 +39,9 @@ return [
         ],
     ],
     'photo_category' => [
+        'resource' => [
+            'label' => 'هاوپۆلەکانی وێنە',
+        ],
         'nav' => [
             'label' => 'هاوپۆلەکانی وێنە',
             'group' => '',
