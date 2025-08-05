@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.9.0](https://github.com/rectitude-open/filament-photos/compare/v1.8.0...v1.9.0) (2025-08-05)
+
+
+### Features
+
+* add breadcrumb and title localization for PhotoCluster and PhotoCategory ([d6b7a25](https://github.com/rectitude-open/filament-photos/commit/d6b7a25c3f4af32ebde44e9a76886c54a02c4cd3))
+* add resource labels for photos and photo categories in multiple languages ([0e1b531](https://github.com/rectitude-open/filament-photos/commit/0e1b5310b270e18df0def7d881198d34d8d0b7d0))
+
+
+### Bug Fixes
+
+* update label for bulk replicate action in PhotoResource ([24d9883](https://github.com/rectitude-open/filament-photos/commit/24d98835ccb3350984b94eb9140cfba14f338fe4))
+
 ## [1.8.0](https://github.com/rectitude-open/filament-photos/compare/v1.7.2...v1.8.0) (2025-07-19)
 
 
