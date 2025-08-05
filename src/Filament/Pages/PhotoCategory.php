@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace RectitudeOpen\FilamentPhotos\Filament\Pages;
 
 use Filament\Forms\Components\TextInput;
+use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
 use RectitudeOpen\FilamentPhotos\Filament\Clusters\PhotoCluster;
 use RectitudeOpen\FilamentPhotos\Models\PhotoCategory as TreePageModel;
@@ -41,10 +42,18 @@ class PhotoCategory extends BasePage
         return static::$model ?? config('filament-photos.photo_category.model', TreePageModel::class);
     }
 
+    public function getTitle(): string | Htmlable
+    {
+        return __('filament-photos::filament-photos.photo_category.resource.label');
+    }
+
     protected function getActions(): array
     {
         return [
-            $this->getCreateAction()->icon('heroicon-o-plus'),
+            $this->getCreateAction()
+                ->modalHeading(fn (): string => __('filament-actions::create.single.modal.heading', ['label' => __('filament-photos::filament-photos.photo_category.resource.label')]))
+                ->label(__('filament-photos::filament-photos.photo_category.resource.label'))
+                ->icon('heroicon-o-plus'),
         ];
     }
 

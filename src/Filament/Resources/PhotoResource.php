@@ -66,6 +66,11 @@ class PhotoResource extends Resource
                 : '';
     }
 
+    public static function getModelLabel(): string
+    {
+        return __('filament-photos::filament-photos.photo.resource.label');
+    }
+
     public static function form(Form $form): Form
     {
         $editorClass = config('filament-photos.editor_component_class', RichEditor::class);

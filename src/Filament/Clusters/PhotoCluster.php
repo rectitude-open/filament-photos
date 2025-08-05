@@ -28,4 +28,9 @@ class PhotoCluster extends Cluster
     {
         return __('filament-photos::filament-photos.cluster.nav.group');
     }
+
+    public static function getClusterBreadcrumb(): string
+    {
+        return __('filament-photos::filament-photos.cluster.nav.label');
+    }
 }
